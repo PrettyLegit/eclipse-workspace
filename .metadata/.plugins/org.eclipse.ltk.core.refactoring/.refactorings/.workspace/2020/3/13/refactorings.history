@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 10 resources" deleteContents="true" description="Delete 10 resources" element1="/Semester 2 1322 Lab 1A" element10="/Semester 2 1322 Lab 9 ArrayLists and Linked Lists" element2="/Semester 2 1322 Lab 2A" element3="/Semester 2 1322 Lab 2B" element4="/Semester 2 1322 Lab 3 Inheritence" element5="/Semester 2 1322 Lab 4 Abract Classes" element6="/Semester 2 1322 Lab 5 GUI" element7="/Semester 2 1322 Lab 6 GUI and Strings" element8="/Semester 2 1322 Lab 7 Recursion" element9="/Semester 2 1322 Lab 8 Recursion" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="10" stamp="1585364271843"/>
+</session>

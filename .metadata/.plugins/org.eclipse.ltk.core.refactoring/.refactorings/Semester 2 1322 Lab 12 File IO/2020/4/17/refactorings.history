@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;application.Main&apos; to &apos;Main_L12&apos;&#x0D;&#x0A;- Original project: &apos;Semester 2 1322 Lab 12 File IO&apos;&#x0D;&#x0A;- Original element: &apos;application.Main&apos;&#x0D;&#x0A;- Renamed element: &apos;application.Main_L12&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;application{Main.java[Main" matchStrategy="1" name="Main_L12" qualified="false" references="true" similarDeclarations="true" stamp="1587677330858" textual="false" version="1.0"/>
+</session>

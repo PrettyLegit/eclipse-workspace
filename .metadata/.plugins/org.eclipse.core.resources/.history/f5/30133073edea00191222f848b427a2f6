@@ -1,0 +1,34 @@
+/* 
+Class: CSE 1321L 
+Section: 	Lab 8       
+Term:		Fall 2019  
+Instructor:	Dexter Howard
+Name:		Jimmy Nguyen    
+Lab#:		8
+ */
+import java.util.Scanner;
+
+public class ComputeAreas {
+	public static void main(String [] args) {
+		
+		Scanner reader = new Scanner(System.in);
+		
+		System.out.println("Enter in the side of square ");
+		double side = reader.nextDouble();
+		
+		
+		double squareArea = squareArea(side);
+		
+		
+		System.out.println("Square side: " + side);
+		System.out.print("Square area: " + Math.round((squareArea * 100.00)/100.00));
+		
+		
+	}
+	
+	public static double squareArea (double side) {
+		double localArea = 0;
+		localArea = side * side;
+		return localArea;
+	}
+}

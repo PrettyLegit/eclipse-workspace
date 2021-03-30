@@ -1,0 +1,52 @@
+
+
+public class PalindromeString {
+public static String reverse(String userInput, int length) {
+		
+		String reverse = "";
+		
+		if (length > 0) {
+	
+			reverse += "" + userInput.charAt(length--);
+			
+		}
+		if (length >= 0) {
+	
+			reverse(userInput, length);
+		}
+		return reverse;
+	}
+
+	public static String isPalindrome(String userInput, String reverseString) {
+		
+		String judgement = "";
+		
+		if (userInput.equals(reverseString)) {
+			judgement = "a palindrome.";
+		}
+		else {
+			judgement = "not a palindrome.";
+		}
+			
+		return judgement;
+	}
+
+	public static void main(String[] args) {
+
+		String judgement;
+		String userInput = "";
+		int length = 0;
+
+		userInput = "tacocat";
+		length = userInput.length() - 1;
+		
+		String reverseString = reverse(userInput, length);
+		judgement = isPalindrome(userInput, reverseString);
+				
+		System.out.println(reverseString);
+		System.out.print("Recieved " + userInput + " ");
+		System.out.println("which is " + judgement);
+		
+		
+	}
+}

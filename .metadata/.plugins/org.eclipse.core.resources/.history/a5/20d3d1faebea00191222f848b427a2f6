@@ -1,0 +1,80 @@
+/* 
+Class: CSE 1321L 
+Section: 	Lab 8       
+Term:		Fall 2019  
+Instructor:	Dexter Howard
+Name:		Jimmy Nguyen    
+Lab#:		8
+ */
+import java.util.Scanner;
+
+public class MinMaxAvg {
+	public static void main(String[] args) {
+	
+		Scanner reader = new Scanner(System.in);
+		
+		int num1, num2, num3; 
+		
+		System.out.println("Enter in the first number.");
+		num1 = reader.nextInt();
+		
+		System.out.println("Enter in the second number.");
+		num2 = reader.nextInt();
+		
+		System.out.println("Enter in the thrid number.");
+		num3 = reader.nextInt();
+		
+		int maxValue = max(num1, num2, num3);
+		int minValue = min(num1, num2, num3);
+		int avgValue = average(num1, num2, num3);
+		
+		System.out.println("You entered: " + num1 + ", " + num2 + ", " + num3);
+		System.out.println("Max value: " + maxValue);
+		System.out.println("Min value: " + minValue);
+		System.out.println("Average value: " + avgValue);
+	}
+	
+	public static int max (int x, int y, int z) {
+		int maxVal = 0;
+		
+		if( (x > y) && (x > z) ) {
+			maxVal = x;
+		}
+	
+		if( (y > x) && (y > z) ) {
+			maxVal = y;
+		}
+		
+		if( (z > x) && (z > y) ) {
+			maxVal = z;
+		}
+		
+		return maxVal;
+	}
+	
+	public static int min (int x, int y, int z) {
+		int minVal = 0;
+		
+		if( (x < y) && (x < z) ) {
+			minVal = x;
+		}
+	
+		if( (y < x) && (y < z) ) {
+			minVal = y;
+		}
+		
+		if( (z < x) && (z < y) ) {
+			minVal = z;
+		}
+		
+		return minVal;
+	}
+	
+	public static int average (int x, int y, int z) {
+		int avgVal = 0;
+		
+		avgVal = (x + y + z) / 3;
+		
+		return avgVal;
+	}
+}

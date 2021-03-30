@@ -1,0 +1,50 @@
+/* 
+Class: CSE 1321L 
+Section: 	Assignemnt 7 Source Code       
+Term:		Fall 2019  
+Instructor:	Dexter Howard
+Name:		Jimmy Nguyen    
+Lab#:		N/A
+ */
+import java.util.Random;
+public class DNA {
+	public static void createArray() {
+		Random rand = new Random();
+		
+		char[] dnaArray = new char[255];
+		
+		int randomHand = 0;
+		char G = 'G';
+		char C = 'C';
+		char A = 'A';
+		char T = 'T';
+		
+		for(int i = 0; i < dnaArray.length; i++) {
+			randomHand = rand.nextInt(3);
+			
+			switch(randomHand) {
+				case 0: dnaArray[i] = G;
+				break;
+				case 1: dnaArray[i] = C;
+				break;
+				case 2: dnaArray[i] = A;
+				break;
+				case 3: dnaArray[i] = T;
+				break;
+			}
+		}
+		int skipLine = 0;
+		for(int i = 0; i < dnaArray.length; i++) {
+			System.out.print(dnaArray[i]); 
+			skipLine++;
+			if(i == 76) {
+				System.out.println();
+				skipLine = 0;
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		createArray();
+	}
+}

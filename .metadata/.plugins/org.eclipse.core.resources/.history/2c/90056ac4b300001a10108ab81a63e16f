@@ -1,0 +1,25 @@
+
+/* 
+Class: CSE 1321L 
+Section: 	Module 7       
+Term:		Fall 2019  
+Instructor:	Dexter Howard
+Name:		Jimmy Nguyen    
+Lab#:		12
+ */
+
+import java.util.Scanner;
+public class MainAssignGrades {
+	public static void main(String[] args) {
+		
+		Scanner reader = new Scanner(System.in);
+		
+		int classSize;
+		
+		System.out.println("Enter class size.");
+		classSize = reader.nextInt();
+		
+		AssignGrades AssignGrade1 = new AssignGrades(classSize);
+		AssignGrade1.createArray(classSize);
+	}
+}

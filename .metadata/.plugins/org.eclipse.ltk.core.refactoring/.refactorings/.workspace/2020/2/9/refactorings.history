@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Semester 2 1322 Lab 3&apos; to &apos;Semester 2 1322 Lab 3 Inheritence&apos;&#x0D;&#x0A;- Original element: &apos;Semester 2 1322 Lab 3&apos;&#x0D;&#x0A;- Renamed element: &apos;Semester 2 1322 Lab 3&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Semester 2 1322 Lab 3&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Semester 2 1322 Lab 3" name="Semester 2 1322 Lab 3 Inheritence" references="true" stamp="1582904575930" version="1.0"/>
+</session>

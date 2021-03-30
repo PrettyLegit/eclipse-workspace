@@ -1,0 +1,25 @@
+//jimmy nguyen 
+public class Tests {
+	
+	String firstName = "";
+	String lastName = "";
+	double[] testScores = new double[5];
+	
+	Tests(String firstName, String lastName) {
+		this.firstName = firstName;
+		
+		this.lastName = lastName;
+		
+	}
+	
+	Tests(double[] testScores){
+		this.testScores = testScores.clone();
+		
+	}
+	
+	public String toString() {
+		System.out.println("First Name: \tLast Name: \tTest 1: \tTest 2:"
+				+ "\t Test 3: \t Test 4: \tTest 5: \t Average: \tLetter Grade:");
+		return firstName;
+	}
+}

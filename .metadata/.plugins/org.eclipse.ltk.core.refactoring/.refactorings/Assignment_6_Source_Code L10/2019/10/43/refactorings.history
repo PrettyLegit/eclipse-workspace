@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;NewWaka&apos; to &apos;MainWaka&apos;&#x0D;&#x0A;- Original project: &apos;Assignment_6_Source_Code&apos;&#x0D;&#x0A;- Original element: &apos;NewWaka&apos;&#x0D;&#x0A;- Renamed element: &apos;MainWaka&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NewWaka&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{NewWaka.java[NewWaka" matchStrategy="1" name="MainWaka" qualified="false" references="true" similarDeclarations="false" stamp="1571933687775" textual="false" version="1.0"/>
+</session>

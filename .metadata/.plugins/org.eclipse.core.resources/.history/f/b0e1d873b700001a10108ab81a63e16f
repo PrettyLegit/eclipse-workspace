@@ -1,0 +1,41 @@
+
+/* 
+Class: CSE 1321L 
+Section: 	Module 7       
+Term:		Fall 2019  
+Instructor:	Dexter Howard
+Name:		Jimmy Nguyen    
+Lab#:		12
+ */
+import java.util.Scanner;
+
+public class AssignGrades {
+
+	public int createArray(classSize) {
+		Scanner reader = new Scanner(System.in);
+
+		// go back and fix it to where you assign the input to the array index by for
+		// loop
+		// int classIndex;
+
+		int classArray[];
+		int gradesArray[];
+
+		// classIndex = new int[localClassSize];
+		// enteredGrades = new int[localClassSize];
+		//classArray[] = new int[classSize];
+	}
+
+	public void printGrade() {
+
+	}
+
+	public static void main(String[] args) {
+
+		int classSize = 1;
+		int enteredGrades;
+
+		System.out.println("Enter class size.");
+		createArray(classSize);
+	}
+}
