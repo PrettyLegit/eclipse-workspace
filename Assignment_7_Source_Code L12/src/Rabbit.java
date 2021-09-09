@@ -63,7 +63,7 @@ public class Rabbit {
 		rabbitLocation = rand.nextInt(10);
 		
 		//Remove comment 67 if you want to know value of rabbit
-		//System.out.println(rabbitLocation);		
+		System.out.println(rabbitLocation);		
 
 		toString(rabbitArray, userInput, rabbitLocation);
 		
