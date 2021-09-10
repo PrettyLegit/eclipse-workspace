@@ -8,17 +8,22 @@ public class MineField {
 		String[] mineField = new String[9];
 		
 		
-		int randomValue1 = rand.nextInt(8);
-		int randomValue2 = rand.nextInt(8);
+		int randomValue; //random mine location
+		int randomMineSize  = rand.nextInt(3); //Randomly generate 0-2 mines
 		
+		//fill the array with blanks
 		for(int i = 0; i < mineField.length; i++) {
 			mineField[i] = " ";
 		}
 		
-		mineField[randomValue1] = "X";
-		mineField[randomValue2] = "X";
+		//fill the array with the mines
+		for(int i = 0; i < randomMineSize; i++) {
+			randomValue = rand.nextInt(8);
+			mineField[randomValue] = "X";
+		}
 		
-		FindMines(mineField, 2);
+		//locate all the mines through the use of a single agent
+		FindMines(mineField, randomMineSize);
 		
 		
 	}
@@ -27,9 +32,9 @@ public class MineField {
 	public static void FindMines(String[] mineField, int knownMines) {
 		Random rand = new Random();
 		
-		int found = 0;
-		int probe = rand.nextInt(8);
-		int probe_counter = 0; //We keep track out the number of steps we have taken
+		int found = 0;//counter for how many mines it has found. 
+		int probe = rand.nextInt(8);//Randomly generate a number within the domain of the mineField to be used by the ai agent
+		int probe_counter = 0; //We keep track of the number of steps we have taken
 		
 		while(found < knownMines) {
 			probe_counter++;
@@ -42,7 +47,9 @@ public class MineField {
 			}
 			
 			else {
-				mineField[probe] = "O";
+				if(mineField[probe] != "M") {
+					mineField[probe] = "O";
+				}
 			}
 			
 			printWorld(mineField);
@@ -50,7 +57,7 @@ public class MineField {
 		}
 		
 		System.out.println("\n\n\n-----RESULTS ARE IN-----");
-		System.out.println("It took " + probe_counter + " tries to find " +  knownMines + " mines on the field.");
+		System.out.println("It took " + probe_counter + " tries to find " +  knownMines + " mine(s) on the field.");
 		System.out.println("The Final Booard is: ");
 		printWorld(mineField);
 	
